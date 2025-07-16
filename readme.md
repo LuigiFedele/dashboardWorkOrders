@@ -8,6 +8,9 @@ Sistema desenvolvido com NestJS, Prisma ORM e SQLite, responsável por sincroniz
 ### 📺 Frontend (Dashboard TV): Exibe dados com React + Recharts.
 Aplicação React + TypeScript responsiva e visual, ideal para exibição contínua em TVs corporativas. Consome a API backend e apresenta KPIs, gráficos e rankings com atualização periódica.
 
+## Vídeo do projeto:
+- [Aprensetação do dashboard](https://www.linkedin.com/posts/luigiffedele_reactjs-nestjs-manutenaexaetoindustrial-activity-7351283335928627205-pv_h?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPL1zIBjUApHNafvHBueynFVfpsBXZwtiI)
+
 ## 📁 Estrutura do Projeto
 ### Frontend
 ```
