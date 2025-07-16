@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "37f55b36-4471-4f4b-9b0c-66220768dcb8",
+		"name": "Dashboard EAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33269251",
+		"_collection_link": "https://api-eam-trn.postman.co/workspace/API-EAM---TRN-Workspace~ac12baa7-b4f8-4105-99e2-61f221aacfe2/collection/33269251-37f55b36-4471-4f4b-9b0c-66220768dcb8?action=share&source=collection_link&creator=33269251"
+	},
+	"item": [
+		{
+			"name": "Sync Work Orders",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "le13834733-0128-418b-bf88-57933715359e",
+						"type": "text"
+					},
+					{
+						"key": "tenant",
+						"value": "EUCATEX_TRN",
+						"type": "text"
+					},
+					{
+						"key": "organization",
+						"value": "UPP-BTU",
+						"type": "text"
+					},
+					{
+						"key": "cursorposition",
+						"value": "150",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/workorder/sync",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"workorder",
+						"sync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Work Orders",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "le13834733-0128-418b-bf88-57933715359e",
+						"type": "text"
+					},
+					{
+						"key": "tenant",
+						"value": "EUCATEX_TRN",
+						"type": "text"
+					},
+					{
+						"key": "organization",
+						"value": "UPP-BTU",
+						"type": "text"
+					},
+					{
+						"key": "cursorposition",
+						"value": "150",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/workorder/workorders",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"workorder",
+						"workorders"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
